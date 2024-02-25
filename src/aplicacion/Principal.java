@@ -16,11 +16,11 @@ public class Principal{
         System.out.println("la suma de los elementos de una lista es "+Mates.sumaElementos(lista));
         //ejercicio 2 apartado 5
         System.out.println("la media de los numeros de la lista es "+Mates.media(lista2));
-        //ejercicio 4 apartado 6
+        //ejercicio 2 apartado 6
         System.out.println("la desviacion tipica de los numeros de la lista es "+Mates.desviacionTipica(lista2));
-        //ejercicio 4 apartado 7
+        //ejercicio 2 apartado 7
         System.out.println("La suma de los primeros números pares hasta n es "+Mates.sumaNumeros(8, 0));
-        //ejercicio 4 apartado 8
+        //ejercicio 2 apartado 8
         System.out.println("La suma de los elementos pares de una lista de enteros es "+Mates.arrayPares(lista));
        
         
