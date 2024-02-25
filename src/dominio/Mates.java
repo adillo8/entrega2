@@ -1,4 +1,6 @@
 package dominio;
+import java.math.*;
+import java.util.*;
 public class Mates{
     //los metodos son estaticos porque son utilidades que ofrece la clase
     //ejercicio 2 apartado 1
@@ -81,15 +83,24 @@ public class Mates{
         }
     }
 
-    public static double media(double[] array){
-        return media(array,0,0);
+    public static double media(double[] arrayList){
+        return media(arrayList,0,0);
     }
 
 
 
     //ejercicio 2 apartado 6
-    //no se me ocurre como hacerlo con recursividad
-
+    public static double desviacionTipica(double[] arrayList, double media, double suma, int i){
+        if(i == arrayList.length){
+            return Math.sqrt(suma/arrayList.length);
+        }
+        else{
+            return desviacionTipica(arrayList, media, suma + Math.pow(arrayList[i] - media, 2), ++i);
+        }
+    }
+    public static double desviacionTipica(double[] arrayList){
+        return desviacionTipica(arrayList, media(arrayList), 0, 0);
+    }
 
     //ejercicio 2 apartado 7
     public static int sumaNumeros(int n, int suma){

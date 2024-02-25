@@ -17,7 +17,7 @@ public class Principal{
         //ejercicio 2 apartado 5
         System.out.println("la media de los numeros de la lista es "+Mates.media(lista2));
         //ejercicio 4 apartado 6
-        System.out.println("la desviacion tipica de los numeros de la lista es ");
+        System.out.println("la desviacion tipica de los numeros de la lista es "+Mates.desviacionTipica(lista2));
         //ejercicio 4 apartado 7
         System.out.println("La suma de los primeros números pares hasta n es "+Mates.sumaNumeros(8, 0));
         //ejercicio 4 apartado 8
